@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #box{
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+        background-color: skyblue;
+      }
+  
+    </style>
+  </head>
+  <body>
+  
+    悬停一个盒子两秒后变圆形
+
+    <section class="father">
+      <section id="box"></section>
+    </section>
+    <script>
+      let box = document.getElementById('box');
+      box.addEventListener('mouseenter',function(){
+        setTimeout(function(){
+          box.style.borderRadius="50%";
+        },2000)
+      })
+    </script>
+  </body>
+</html>
